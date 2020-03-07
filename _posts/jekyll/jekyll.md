@@ -1,0 +1,45 @@
+# Jekyll 教程
+
+## jekyll 安装
+
+> 安装jekyll 首先需要 ruby 的环境， Macos系统自待ruby环境，不需要安装；Linux则需要安装
+
+
+- 安装rvm
+
+  [Ruby Version Manager (RVM)][3]
+
+- 安装rvm
+
+```
+   rvm install [version]
+```
+
+- 安装 jekyll
+
+```
+
+gem install jekyll bundler
+
+```
+
+[Jekyll 入门][1]
+
+[将纯文本转换为静态博客网站][2]
+
+
+
+## 主题切换
+
+[Jekyll主题网站][4]
+
+## 使用
+
+
+[1]: https://www.jekyll.com.cn/docs/
+
+[2]: http://jekyllcn.com/
+
+[3]: http://rvm.io/
+
+[4]: http://jekyllthemes.org/
