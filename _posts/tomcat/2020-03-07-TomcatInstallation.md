@@ -1,4 +1,14 @@
-﻿tomcat安装过程：
+﻿---
+title: Tomcat 安装教程
+tags: 教程
+article_header:
+  type: cover
+  image:
+    src: /screenshot.jpg
+---
+
+# tomcat安装过程
+
 (1)从网上下载tomcat安装包
 
         https://tomcat.apache.org/
