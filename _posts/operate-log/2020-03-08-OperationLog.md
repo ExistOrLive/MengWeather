@@ -31,3 +31,19 @@ gem sources -l
 ```
  rvm  implode
 ```
+
+## 设置ruby2.6.3的环境变量
+
+>  在/home/zhumeng/.bashrc末添加
+
+```sh
+
+GEM_HOME=$HOME/.rvm/rubies/ruby-2.6.3
+GEM_PATH=$HOME/.rvm/rubies/ruby-2.6.3
+PATH=$GEM_HOME/bin:$PATH
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export GEM_HOME GEM_PATH PATH
+
+```
