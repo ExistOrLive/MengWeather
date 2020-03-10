@@ -17,7 +17,7 @@ article_header:
 
 ```
 
-jekyll serve -H 0.0.0.0 -- detach
+jekyll serve -H 0.0.0.0 --detach
 
 ```
 
