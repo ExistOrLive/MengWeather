@@ -16,6 +16,7 @@ article_header:
 - 启动服务 
 
 ```
+jekyll build
 
 jekyll serve -H 0.0.0.0 --detach
 
