@@ -14,10 +14,10 @@ article_header:
 
 2. 使用wget 命令下载 
 
-   ```
-    wget http://nginx.org/download/nginx-1.16.1.tar.gz
+```
+  wget http://nginx.org/download/nginx-1.16.1.tar.gz
 
-   ```
+```
 
 3. 解压缩
 
