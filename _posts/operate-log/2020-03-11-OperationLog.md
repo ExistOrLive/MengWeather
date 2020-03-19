@@ -41,7 +41,7 @@ article_header:
 ```
 cd /usr/local/nginx/sbin
 
-./ngnix -s top
+./ngnix -s stop
 
 ./ngnix
 
