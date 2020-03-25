@@ -14,36 +14,36 @@ article_header:
 
 2. 使用wget 命令下载 
 
-```
-  wget http://nginx.org/download/nginx-1.16.1.tar.gz
+    ```
+     wget http://nginx.org/download/nginx-1.16.1.tar.gz
 
-```
+    ```
 
 3. 解压缩
 
-```
+    ```
 
-tar -xvf nginx-1.16.1.tar.gz
+    tar -xvf nginx-1.16.1.tar.gz
 
-```
+    ```
 
 4. 进入解压缩后的目录编译安装
 
-```
+    ```sh
 
-./configure
+     ./configure
 
-make
+     make
 
-make install
+     make install
 
-```
+    ```
 
 5. 编译安装后，目录在 /usr/local/ngnix， 进入 /usr/local/ngnix/sbin 启动服务
 
-```
-nginx
-```
+    ```
+     nginx
+    ```
 
 #### Tip 
 
