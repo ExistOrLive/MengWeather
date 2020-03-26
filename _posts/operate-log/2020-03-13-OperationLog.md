@@ -24,64 +24,60 @@ article_header:
         ![][3]
 
    - 在server 中将根目录设置为/home/zhumeng/github/startbootstrap-creative
-
+      
     
-   具体配置：
-
-```sh
-user root;                          # ngnix的启动者为root ，这里将工作进程 也设置为root ， 默认为nobody（无法访问/home/zhumeng/github ）
 
 
-server {
-        listen       80;
-        server_name  localhost;
-
-        #charset koi8-r;
-
-        #access_log  logs/host.access.log  main;
-
-        location / {
-            root   /home/zhumeng/github/startbootstrap-creative;                #  将首页的根目录设置为/home/zhumeng/github/startbootstrap-creative
-            index  index.html index.htm;
-        }
-
-        #error_page  404              /404.html;
-
-        # redirect server error pages to the static page /50x.html
-        #
-        error_page   500 502 503 504  /50x.html;
-        location = /50x.html {
-            root   html;
-        }
-
-        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
-        #
-        #location ~ \.php$ {
-        #    proxy_pass   http://127.0.0.1;
-        #}
-
-        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-        #
-        #location ~ \.php$ {
-        #    root           html;
-        #    fastcgi_pass   127.0.0.1:9000;
-        #    fastcgi_index  index.php;
-        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
-        #    include        fastcgi_params;
-        #}
-
-        # deny access to .htaccess files, if Apache's document root
-        # concurs with nginx's one
-        #
-        #location ~ /\.ht {
-        #    deny  all;
-        #}
-    }
+      ```
+         user root;                          # ngnix的启动者为root ，这里将工作进程 也设置为root ， 默认为nobody（无法访问/home/zhumeng/github ）
 
 
+         server {
+            listen       80;
+            server_name  localhost;
 
+            #charset koi8-r;
 
-```
+            #access_log  logs/host.access.log  main;
+
+            location / {
+                root   /home/zhumeng/github/startbootstrap-creative;                #  将首页的根目录设置为/home/zhumeng/github/startbootstrap-creative
+                index  index.html index.htm;
+            }
+
+            #error_page  404              /404.html;
+
+            # redirect server error pages to the static page /50x.html
+            #
+            error_page   500 502 503 504  /50x.html;
+            location = /50x.html {
+                root   html;
+            }
+
+            # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+            #
+            #location ~ \.php$ {
+            #    proxy_pass   http://127.0.0.1;
+            #}
+
+            # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+            #
+            #location ~ \.php$ {
+            #    root           html;
+            #    fastcgi_pass   127.0.0.1:9000;
+            #    fastcgi_index  index.php;
+            #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+            #    include        fastcgi_params;
+            #}
+
+            # deny access to .htaccess files, if Apache's document root
+            # concurs with nginx's one
+            #
+            #location ~ /\.ht {
+            #    deny  all;
+            #}
+         }
+     ```
 
 4. 重启ngnix
 
@@ -90,8 +86,8 @@ server {
 
 1. 修改server.xml, 在<Host>tag中添加context，指向/home/zhumeng/github/startbootstrap-creative
 
-  ```xml
- <Host name="localhost"  appBase="webapps"
+    ```xml
+     <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
 
         <Context path="" docBase="/home/zhumeng/github/startbootstrap-creative"/>    <!-- 添加context，指向/home/zhumeng/github/startbootstrap-creative-->
@@ -108,8 +104,8 @@ server {
                prefix="localhost_access_log" suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 
-      </Host>
-  ```
+     </Host>
+    ```
 
 2. 重启tomcat
 
